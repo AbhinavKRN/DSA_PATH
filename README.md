@@ -7,7 +7,6 @@ Welcome to the Data Structures and Algorithms Important Questions Repository! Th
 1. [Introduction](#introduction)
 2. [Questions](#questions)
 3. [How to Contribute](#how-to-contribute)
-4. [License](#license)
 
 ## Introduction
 
