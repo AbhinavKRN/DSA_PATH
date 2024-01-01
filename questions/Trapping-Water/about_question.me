@@ -1,0 +1,45 @@
+**README**
+
+**Title:** Rain Water Trapped
+
+**Description:**
+The provided Java class, `Rain_water_Trapped`, implements a solution to calculate the amount of trapped rainwater in a given array of elevation values. The algorithm employs a two-pointer approach to efficiently traverse the array and determine the trapped water between the elevations.
+
+**Usage:**
+1. Copy and paste the `Rain_water_Trapped` class into your Java project.
+2. Create an instance of the class.
+3. Call the `trap` method, passing an array of elevation values as a parameter.
+
+**Method:**
+```java
+public int trap(final int[] A)
+```
+- **Parameters:**
+  - `A`: An array of integers representing the elevation values.
+- **Returns:**
+  - An integer representing the total trapped rainwater.
+
+**Algorithm:**
+1. Initialize two pointers, `left` and `right`, at the beginning and end of the array, respectively.
+2. Initialize variables `leftmax` and `rightmax` to keep track of the maximum elevation encountered from the left and right, initialized to 0.
+3. Initialize a variable `count` to accumulate the trapped rainwater.
+4. Iterate through the array using the two-pointer approach until `left` is less than `right`.
+5. If `A[left]` is less than `A[right]`, update `leftmax` and add the trapped water between `leftmax` and `A[left]` to `count`. Move `left` pointer to the right.
+6. If `A[right]` is less than or equal to `A[left]`, update `rightmax` and add the trapped water between `rightmax` and `A[right]` to `count`. Move `right` pointer to the left.
+7. Continue the iteration until `left` and `right` pointers meet.
+
+**Edge Case:**
+- If the length of the array is less than or equal to 2, the function returns 0 as there won't be any trapped water.
+
+**Example:**
+```java
+Rain_water_Trapped trapCalculator = new Rain_water_Trapped();
+int[] elevationArray = {0,1,0,2,1,0,1,3,2,1,2,1};
+int trappedWater = trapCalculator.trap(elevationArray);
+System.out.println("Trapped Water: " + trappedWater);
+```
+
+This code calculates and prints the amount of trapped rainwater for the given elevation array.
+
+**Note:**
+Make sure to handle the integration of this class within your existing project structure and consider testing with various input scenarios for accurate results.
