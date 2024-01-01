@@ -29,8 +29,5 @@ Your contributions are highly welcome! If you have additional important DSA ques
 6. Push to the branch: `git push origin feature/new-questions`.
 7. Submit a pull request.
 
-## License
-
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Happy coding!
